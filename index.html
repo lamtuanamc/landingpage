@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pancake chat</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<header id="header">
+			<div class="left-side-header">
+				<div class="logo">
+					<img src="./assets/logo.svg" alt="logo">
+					<h1 class="logo-text">PancakeChat</h1>
+				</div>
+				<div>
+					<ul class="nav">
+						<li class="nav-item nav-item-active" onclick="scrollToId('intro')">Giới thiệu</li>
+						<li class="nav-item" onclick="scrollToId('feature')"> Tính năng</li>
+						<li class="nav-item" onclick="scrollToId('target')">Đối tượng</li>
+						<li class="nav-item" onclick="scrollToId('question')">Câu hỏi thường gặp</li>
+					</ul>
+				</div>
+			</div>
+			<div class="right-side-header">
+					<a href="https://pages.fm/" class="link-pancake">
+						<img src="/assets/logo-pancake.svg" alt="">
+						<p>Tìm hiểu Pancake</p>
+					</a>
+				<a href="https://id.pancake.vn/signup" class="btn btn-register">
+						<p class="btn-text register-text">Đăng ký</p>
+				</a>
+			</div>
+		</header>
+		<main>
+			<section class="intro" id="intro">
+				<div class="left-side-intro">
+					<p class="title-section">Pancake Chat</p>
+					<p class="slogan">Kết nối dễ dàng làm việc hiệu quả cùng Pancake Chat</p>
+					<p class="content-intro">Pancake Chat là phần mềm chat trao đổi thông tin nội bộ với các chế độ quản lý công việc, giúp các nhà quản lý có thể kiểm soát luồng công việc dễ dàng hiệu quả.</p>
+					<div class="btn-action">
+						<div class="btn btn-download">
+							<p class="btn-text">Tải xuống</p>
+							<img src="./assets/download.svg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="right-side-intro">
+					<div class="rouded-rotate-bg">
+						<div class="background-rotate"></div>
+					</div>
+					<img src="/assets/images/intro.png" alt="">
+					</div>
+				</div>
+			</section>
+			<section class="feature" id="feature">
+				<div class="rounded-content-feautre">
+					<p class="title-section">Tính năng</p>
+					<p class="content-section">Những tính năng nổi bật của Pancake Chat</p>
+					<p class="quote-section">Khả năng kết nối linh hoạt, tính bảo mật cao, quản lý công việc dễ dàng hiệu quả, giao diện dễ dàng sử dụng.</p>
+					<div class="connect-pos">
+						<div class="left-side-connect-pos">
+							<div class="feature-title">
+								<div class="before-title"></div>
+								<p>Kết nối với POS</p>
+							</div>
+							<div class="fist-connect-pos">
+								<img src="./assets/logo-pos.svg" alt="">
+								<p class="feature-content">Kết nối POS trực tiếp</p>
+								<p class="feature-quote">Kết nối trực tiếp POS với tài khoản Pancake Chat của bạn.</p>
+							</div>
+							<div class="rounded-feature-item">
+								<div class="feature-item-left">
+									<img src="./assets/clipboard.svg" alt="">
+									<p class="feature-content">Quản lý đơn hàng</p>
+									<p class="feature-quote">Cập nhật và quản lý đơn hàng POS dễ dàng.</p>
+								</div>
+								<div class="feature-item-right">
+									<img src="./assets/user-rectagle.svg" alt="">
+									<p class="feature-content">Quản lý tệp khách hàng</p>
+									<p class="feature-quote">Kết nối và quản lý với tệp khách hàng của bạn trên POS.</p>
+								</div>
+							</div>
+						</div>
+						<div class="right-side-connect-pos">
+							<img src="./assets/images/connect-pos.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="manage">
+				<div class="left-side-manage">
+					<img src="./assets/images/issue.png" alt="">
+				</div>
+				<div class="right-side-manage">
+					<div class="feature-title">
+						<div class="before-title"></div>
+						<p>Quản lý công việc theo kênh</p>
+					</div>
+					<div class="manage-item manage-first-item">
+						<img src="./assets/kanban.svg" alt="">
+						<p class="feature-content">Quản lý và phân công đầu việc linh hoạt</p>
+						<p class="feature-quote">Với 2 chế độ “Dev mode” và “Kanban mode" giúp bạn quản lý, phân công, theo dõi và đánh giá tiến độ công việc của team.</p>
+					</div>
+					<div class="manage-item">
+						<img src="./assets/hash.svg" alt="">
+						<p class="feature-content">Sáng tạo kênh trò chuyện, làm việc hiệu quả</p>
+						<p class="feature-quote">Tạo ra các kênh chat theo từng phòng ban, dự án, tùy theo tính chất công việc hoặc tạo kênh chat với những đồng nghiệp thân thiết.</p>
+					</div>
+				</div>
+			</section>
+			<section class="other-feature">
+				<div class="left-side-other-feature">
+					<div class="feature-title">
+						<div class="before-title"></div>
+						<p>Các tính năng nổi bật khác</p>
+					</div>
+				</div>
+				<div class="right-side-other-feature">
+					<img src="./assets/images/login.png" alt="">
+				</div>
+			</section>
+			<section class="target" id="target">
+				<p class="title-section">Đối tượng</p>
+				<p class="content-section">Đối tượng sử dụng Pancake Chat</p>
+				<p class="quote-section">Pancake Chat là một lựa chọn hoàn hảo cho bạn trong việc phục vụ công việc, trao đổi thông tin công việc với đồng nghiệp thay vì dùng mail. Pancake Chat phù hợp với một nhóm, một công ty, doanh nghiệp, trao đổi với các đối tác,...</p>
+				<div class="list-target">
+					<div class="target-item">
+						<div class="title-card">
+							<p class="title-name">
+								Công ty, Doanh nghiệp, Starup
+							</p>
+							<img src="./assets/building.svg" alt="">
+						</div>
+						<div class="content-card">
+							Công ty, doanh nghiệp của bạn đang cần một phần mềm giúp trao đổi thông tin nội bộ dễ dàng, nhanh chóng, bảo mật...
+						</div>
+					</div>
+					<div class="target-item target-center">
+						<div class="title-card">
+							<p class="title-name">
+								Nhà quản trị
+							</p>
+							<img src="./assets/user-circle-gear.svg" alt="">
+						</div>
+						<div class="content-card">
+							Bạn là một nhà quản trị dự án vừa muốn trao đổi thông tin giữa các thành viên vừa muốn quản lý công việc dễ dàng, hiệu quả.
+						</div>
+					</div>
+					<div class="target-item">
+						<div class="title-card">
+							<p class="title-name">
+								Các chủ shop
+							</p>
+							<img src="./assets/store-font.svg" alt="">
+						</div>
+						<div class="content-card">
+							Bạn là một startup, một chủ shop muốn cập nhật chi tiết các đơn hàng, phân công nhiệm vụ cho nhân viên ngay lập tức.
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="question" id="question">
+				<p class="title-section">Câu hỏi thường gặp</p>
+				<p class="content-section">Những câu hỏi thường gặp về Pancake Chat</p>
+				<div class="question-item">
+					<div class="accordion-question">Workspace là gì? Channel là gì?</div>
+					<div class="panel">
+						<p>Bạn có thể hiểu đơn giản về Workspace và Channel như sau: Nếu coi Workspace như một công ty thì Channel chính là các phòng ban trong công ty đó.</p>
+					</div>
+				</div>
+				<div class="question-item">
+					<div class="accordion-question">Issue là gì?</div>
+					<div class="panel">
+						<p>Đây là không gian làm việc của nhóm của bạn, tại đây bạn có thể giao việc cho các thành viên trong nhóm, theo dõi tiến độ công việc và hiệu suất làm việc của từng người.</p>
+					</div>
+				</div>
+				<div class="question-item">
+					<div class="accordion-question">Làm sao để liên kết POS với Panchat?</div>
+					<div class="panel">
+						<p>Đầu tiên, bạn chọn biểu tượng App ở góc trái màn hình, sau đó chọn Create app rồi chọn Cài đặt tại app POS
+							Tiếp theo bạn quay trở lại channel cần liên kết với POS, chọn Detail => App => New Apps => Install. 
+							Vậy là bạn đã hoàn thành việc liên kết POS với Pancake chat.
+						</p>
+					</div>
+				</div>
+				<div class="question-item">
+					<div class="accordion-question">Sự khác nhau giữa dev mode và Kanban mode?</div>
+					<div class="panel">
+						<p>Dev mode là nền tảng quản lý công việc dành cho phòng ban IT, các leader có thể dễ dàng giao việc cho các thành viên trong nhóm của mình với các ghi chú và thời gian rõ ràng.
+							Kanban mode là nơi mà hầu hết các phòng ban khác sẽ hoạt động, các công việc sẽ được chia theo từng nhóm khác nhau, phân công cho từng thành viên kèm theo deadline cho mỗi công việc. Nhà quản lý sẽ có một cái nhìn tổng quan cho từng dự án với Kanban mode.
+						</p>
+					</div>
+				</div>
+				<div class="question-item">
+					<div class="accordion-question">Làm sao để chuyển giữa hai chế độ Dev mode và Kanban mode?</div>
+					<div class="panel">
+						<p>Đầu tiên, bạn phải là quản trị viên của channel. Sau đó bạn vào channel cần đổi rồi vào Detail => Change workflow => Dev mode hoặc Kanban mode.</p>
+					</div>
+				</div>
+			</section>
+			<section class="start-panchat">
+				<p class="content-section">Bắt đầu với Pancake Chat</p>
+				<p class="quote-section">Dễ dàng quản lý, trao đổi công việc của bạn cùng với Pancake Chat ngay chỉ với thao tác đơn giản.</p>
+				<div class="btn">
+					<p class="btn-text">Đăng ký ngay</p>
+					<img src="./assets/swrapRight.svg" alt="">
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="left-side-footer">
+				<div class="logo">
+					<img src="./assets/logo.svg" alt="logo">
+					<h1 class="logo-text">PancakeChat</h1>
+				</div>
+				<div class="quote-app">Pancake chat là phần mềm chat giúp trao đổi thông tin nội bộ một cách dễ dàng.</div>
+				<ul class="nav">
+					<li class="nav-item" onclick="scrollToId('intro')">Giới thiệu</li>
+						<li class="nav-item" onclick="scrollToId('feature')"> Tính năng</li>
+						<li class="nav-item" onclick="scrollToId('target')">Đối tượng</li>
+						<li class="nav-item" onclick="scrollToId('question')">Câu hỏi thường gặp</li>
+				</ul>
+				<div class="copyright">© 2022 Pancake Chat</div>
+			</div>
+			<div class="right-side-footer">
+				<div class="get-app">Get the app</div>
+				<div class="down-app app-store">
+					<a href="https://apps.apple.com/mt/app/pancake-chat/id1527053006">
+						<img src="./assets/images/app-store.png" alt="">
+					</a>
+				</div>
+				<div class="down-app ch-play">
+					<a href="https://play.google.com/store/apps/details?id=vn.pancake.chat&hl=vi&gl=US">
+						<img src="./assets/images/ch-play.png" alt="">
+					</a>
+				</div>
+				<div class="social">
+					<img src="./assets/panchat-social.svg" alt="">
+					<img class="facebook" src="./assets/facebook.svg" alt="">
+					<img src="./assets/instagram.svg" alt="">
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script>
+		var acc = document.getElementsByClassName("accordion-question");
+		var i;
+		
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("accordion-active");
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight) {
+					panel.style.maxHeight = null;
+				} else {
+					panel.style.maxHeight = panel.scrollHeight + "px";
+				} 
+			});
+		}
+
+		function scrollToId(id) {
+			document.getElementById(id).scrollIntoView({behavior: 'smooth'});
+		}
+		</script>
+</body>
+</html>
