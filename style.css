@@ -320,7 +320,7 @@ header {
 /***************************************** other-feature *****************************************/
 
 .other-feature {
-	margin: 96px 116px 96px 116px;
+	padding: 96px 116px 96px 116px;
 	display: flex;
 	justify-content: space-between;
 	max-width: 1440px;
