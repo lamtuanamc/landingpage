@@ -209,9 +209,11 @@ header {
 	margin-right: 80px;
 	background: #FFFFFF;
 	border-radius: 8px 8px 0px 0px;
+}
+
+.rounded-side-pos {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
 }
 
 .feature-title {
@@ -600,4 +602,137 @@ footer .nav-item {
 .social {
 	display: flex;
 	justify-content: space-between;
+}
+
+@media screen and (max-width: 1300px) {
+	.question-item {
+		margin-left: 180px;
+		margin-right: 180px;
+	}
+}
+
+
+@media screen and (max-width: 1250px) {
+	header, footer, .intro, .target, .manage, .other-feature, .question, .start-panchat{
+		padding-right: 86px;
+		padding-left: 86px;
+	}
+
+	.slogan {
+		font-size: 40px;
+	}
+
+	.content-intro {
+		font-size: 16px;
+	}
+
+	.background-rotate {
+		right: -30px;
+	}
+
+	.content-section {
+		font-size: 30px;
+	}
+
+	.feature-title p {
+		font-size: 28px;
+	}
+
+	.right-side-other-feature img {
+		height: 430px;
+	}
+
+	.right-side-connect-pos img  {
+		height: 380px;
+		margin-left: 60px;
+	}
+
+	.question-item {
+		margin-left: 150px;
+		margin-right: 150px;
+	}
+
+}
+
+
+@media screen and (max-width: 1150px) {
+	.right-side-intro img{
+		height: 450px;
+	}
+
+	.right-side-connect-pos img  {
+		height: 380px;
+		margin-left: 40px;
+	}
+
+	.background-rotate {
+		width: 520px;
+		height: 520px;
+		right: 0px;
+		top: -5px;
+	}
+
+	.question-item {
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	header, footer, .intro, .target, .manage, .other-feature, .question, .start-panchat{
+		padding-right: 56px;
+		padding-left: 56px;
+	}
+
+	.left-side-header .nav {
+		display: none;
+	}
+
+	.right-side-header {
+		display: none;
+	}
+
+	/* .intro {
+		flex-direction: column-reverse;
+	} */
+
+	.right-side-intro {
+		display: flex;
+		justify-content: center;
+	}
+
+	/* .right-side-intro img{
+		height: 60vw;
+		margin-left: 0;
+	} */
+
+	.rounded-feature-item {
+		flex-direction: column;
+	}
+
+	.rounded-side-pos {
+		flex-direction: column;
+	}
+
+	.feature-item-left {
+		margin-right: 0;
+		margin-bottom: 24px;
+	}
+
+	.feature-title {
+		display: flex;
+		justify-content: center;
+	}
+
+	.question-item {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	header, footer, .intro, .target, .manage, .other-feature, .question, .start-panchat{
+		padding-right: 36px;
+		padding-left: 36px;
+	}
 }
