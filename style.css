@@ -327,11 +327,74 @@ header {
 	margin: 0 auto;
 }
 
+.left-side-other-feature {
+	display: flex;
+	flex-direction: column;
+}
+
 .right-side-other-feature img {
 	height: 456px;
 	margin-left: 80px;
 }
+
+.list-other-feature {
+	border-bottom: 2px solid #EAE8E8;
+	margin-left: 36px;
+	padding-bottom: 24px;
+}
+
+.other-feature-name {
+	font-size: 16px;
+	line-height: 140%;
+	font-weight: 600;
+	color: #3D3D3D;
+	border-top: 2px solid #EAE8E8;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 32px;
+}
+
+/* .other-feature-name:after {
+  content: '\2228';
+  color: #3D3D3D;
+  float: right;
+	font-size: 25px;
+}
+
+.other-feature-name:after:hover {
+	content: '\2228';
+  color: #40A9FF;
+}
+
+.other-feature-name-active:after {
+  content: "\2227";
+	font-size: 25px;
+	color: #40A9FF;
+} */
+
+.other-feature-panel {
+	border-top: 6px solid #40A9FF;
+	background-color: white;
+	padding: 38px 32px;
+	box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06);
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.other-feature-panel p{
+	font-size: 14px;
+	line-height: 140%;
+	color: #3D3D3D;
+}
+
 /***************************************** target *****************************************/
+
+.rounded-target {
+	background-color: #F4F9FF;
+}
+
 
 .target {
 	padding: 116px;
@@ -450,6 +513,10 @@ header {
 }
 
 /***************************************** start-panchat *****************************************/
+
+.rounded-start-panchat {
+	background-color: #F4F9FF;
+}
 
 .start-panchat {
 	padding: 116px;
