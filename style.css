@@ -85,6 +85,9 @@ header {
 
 /***************************************** intro *****************************************/
 
+.rounded-intro {
+	background-color: #F4F9FF;
+}
 .intro {
 	padding: 116px;
 	display: flex;
