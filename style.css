@@ -172,6 +172,7 @@ header {
 	z-index: 2;
 	height: 500px;
 	margin-left: 80px;
+	max-height: 80vw;
 }
 
 /***************************************** feature *****************************************/
@@ -294,6 +295,7 @@ header {
 .right-side-connect-pos img {
 	height: 428px;
 	margin-left: 100px;
+	max-height: 70vw;
 }
 
 /***************************************** manage *****************************************/
@@ -301,15 +303,20 @@ header {
 .manage {
 	background-color: #FFFFFF;
 	padding: 116px;
-	display: flex;
-	justify-content: space-between;
+	
 	max-width: 1440px;
 	margin: 0 auto;
+}
+
+.rounded-manage {
+	display: flex;
+	justify-content: space-between;
 }
 
 .left-side-manage img {
 	height: 456px;
 	margin-right: 34px;
+	max-height: 70vw;
 }
 
 .manage-item {
@@ -327,10 +334,13 @@ header {
 
 .other-feature {
 	padding: 96px 116px 96px 116px;
-	display: flex;
-	justify-content: space-between;
 	max-width: 1440px;
 	margin: 0 auto;
+}
+
+.rounded-other-feature {
+	display: flex;
+	justify-content: space-between;
 }
 
 .left-side-other-feature {
@@ -341,6 +351,7 @@ header {
 .right-side-other-feature img {
 	height: 456px;
 	margin-left: 80px;
+	max-height: 70vw;
 }
 
 .list-other-feature {
@@ -361,24 +372,6 @@ header {
 	padding-right: 10px;
 	margin-top: 32px;
 }
-
-/* .other-feature-name:after {
-  content: '\2228';
-  color: #3D3D3D;
-  float: right;
-	font-size: 25px;
-}
-
-.other-feature-name:after:hover {
-	content: '\2228';
-  color: #40A9FF;
-}
-
-.other-feature-name-active:after {
-  content: "\2227";
-	font-size: 25px;
-	color: #40A9FF;
-} */
 
 .other-feature-panel {
 	border-top: 6px solid #40A9FF;
@@ -511,7 +504,7 @@ header {
 	line-height: 140%;
 }
 
-.panel {
+.panel p{
 	margin-top: 10px;
 	font-size: 14px;
 	line-height: 140%;
@@ -521,7 +514,7 @@ header {
 /***************************************** start-panchat *****************************************/
 
 .rounded-start-panchat {
-	background-color: #F4F9FF;
+	background-color: #25488D;
 }
 
 .start-panchat {
@@ -536,10 +529,12 @@ header {
 
 .start-panchat .content-section {
 	margin-bottom: 16px;
+	color: white;
 }
 
 .start-panchat .quote-section {
 	margin-bottom: 32px;
+	color: white;
 }
 
 .start-panchat .btn {
@@ -606,6 +601,10 @@ footer .nav-item {
 .social {
 	display: flex;
 	justify-content: space-between;
+}
+
+.copyright-sm {
+	display: none;
 }
 
 @media screen and (max-width: 1300px) {
@@ -683,10 +682,10 @@ footer .nav-item {
 }
 
 @media screen and (max-width: 992px) {
-	header, footer, .intro, .target, .manage, .other-feature, .question, .start-panchat{
-		padding-right: 56px;
-		padding-left: 56px;
-	}
+	/* header, footer, .intro, .target, .manage, .other-feature, .question, .start-panchat{
+		padding-right: 86px;
+		padding-left: 86px;
+	} */
 
 	.left-side-header .nav {
 		display: none;
@@ -705,22 +704,8 @@ footer .nav-item {
 		justify-content: center;
 	}
 
-	/* .right-side-intro img{
-		height: 60vw;
-		margin-left: 0;
-	} */
-
-	.rounded-feature-item {
-		flex-direction: column;
-	}
-
 	.rounded-side-pos {
-		flex-direction: column;
-	}
-
-	.feature-item-left {
-		margin-right: 0;
-		margin-bottom: 24px;
+		flex-direction: column-reverse;
 	}
 
 	.feature-title {
@@ -736,7 +721,283 @@ footer .nav-item {
 
 @media screen and (max-width: 768px) {
 	header, footer, .intro, .target, .manage, .other-feature, .question, .start-panchat{
-		padding-right: 36px;
-		padding-left: 36px;
+		padding-right: 64px;
+		padding-left: 64px;
 	}
+
+	.intro {
+		flex-direction: column-reverse;
+		padding: 64px;
+	}
+	
+	.left-side-intro {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.slogan {
+		font-weight: 600;
+		font-size: 34px;
+		text-align: center;
+	}
+	
+	.content-intro {
+		font-size: 18px;
+		text-align: center;
+		color: #828282;
+	}
+	
+	.title-section {
+		font-size: 16px;
+		text-align: center;
+		color: #40A9FF;
+	}
+	
+	.content-section {
+		font-size: 22px;
+		text-align: center;
+		color: #25488D;
+	}
+	
+	.quote-section {
+		font-size: 16px;
+		line-height: 140%;
+		text-align: center;
+		color: #828282;
+	}
+	
+	.background-rotate {
+		width: 585px;
+		height: 585px;
+		border-radius: 60px;
+		right: -140px;
+		top: -110px;
+	}
+	
+	.right-side-intro img{
+		z-index: 2;
+		height: 500px;
+		margin-left: 0;
+		margin-bottom: 60px;
+	}
+
+	.title-section {
+		font-size: 14px;
+	}
+
+	.feature .content-section {
+		color: #FFFFFF;
+		margin-top: 16px;
+		margin-bottom: 16px;
+		text-align: center;
+		font-size: 22px;
+	}
+
+	.quote-section {
+		font-size: 14px;
+	}
+
+	.feature-title {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.feature-title p {
+		font-weight: 600;
+		font-size: 20px;
+		margin-bottom: 8px;
+	}
+
+	.connect-pos {
+		padding: 40px 36px 40px 36px;
+		margin-left: 40px;
+		margin-right: 40px;
+		background: #FFFFFF;
+		border-radius: 8px 8px 0px 0px;
+	}
+
+	.manage {
+		padding: 104px 64px;
+	}
+
+	.rounded-manage {
+		flex-direction: column;
+	}
+
+	.right-side-manage {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.manage-first-item {
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-right: 24px;
+	}
+
+	.other-feature {
+		padding: 0px 90px 64px 90px;
+		
+	}
+
+	.rounded-other-feature {
+		flex-direction: column-reverse;
+	}
+
+	.right-side-other-feature img {
+		height: 400px;
+		margin-left: 0;
+	}
+
+	.list-target {
+		flex-direction: column;
+	}
+	
+	.target-item {
+		border: 1px solid #828282;
+	}
+	
+	.title-card {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 16px 18px;
+		background: #25488D;
+	}
+	
+	
+	.target-center {
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 24px;
+		margin-bottom: 24px;
+	}
+
+	.accordion-question {
+		color: #171717;
+		font-size: 16px;
+	}
+
+	.list-other-feature {
+		margin-left: 0;
+	}
+	
+	footer {
+		flex-direction: column;
+	}
+
+	footer .nav {
+		flex-wrap: wrap;
+	}
+
+	footer .nav-item {
+		margin-bottom: 24px;
+	}
+
+	.ch-play {
+		margin-bottom: 48px;
+	}
+
+	.rounded-get-app {
+		display: flex;
+		margin-top: 16px;
+	}
+
+	.app-store {
+		margin-top: 0;
+		margin-right: 16px;
+	}
+
+	.copyright {
+		display: none;
+	}
+
+	.social {
+		justify-content: flex-start;
+		margin-bottom: 24px;
+	}
+
+	.social img {
+		margin-right: 24px;
+	}
+
+	.copyright-sm {
+		display: block;
+		margin-bottom: 40px;
+		font-size: 14px;
+		color: #828282;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	header, footer, .intro, .target, .manage, .other-feature, .question, .start-panchat{
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+
+	.right-side-intro img{
+		height: 300px;
+	}
+
+	.background-rotate {
+		width: 340px;
+		height: 340px;
+		border-radius: 60px;
+		right: -80px;
+		top: -20px;
+	}
+
+	.left-side-intro {
+		align-items: flex-start;
+	}
+
+	.slogan {
+		text-align: left;
+	}
+	
+	.content-intro {
+		text-align: left;
+	}
+
+	.right-side-connect-pos img {
+		height: 224px;
+		padding-left: 0;
+		margin-left: 0;
+	}
+
+	.connect-pos {
+		padding: 32px 16px 32px 16px;
+		margin-left: 16px;
+		margin-right: 16px;
+		border-radius: 8px 8px 0px 0px;
+	}
+
+	.rounded-feature-item {
+		flex-direction: column;
+	}
+
+	.feature-item-left {
+		margin-right: 0;
+		margin-bottom: 24px;
+	}
+
+	.fist-connect-pos {
+		margin-bottom: 24px;
+		margin-top: 32px;
+	}
+
+	.right-side-manage {
+		flex-direction: column;
+	}
+
+	.manage-first-item {
+		margin-bottom: 24px;
+		margin-right: 0;
+	}
+
+	.list-other-feature img{
+		height: 240px;
+	}
+
 }
