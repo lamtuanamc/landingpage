@@ -772,7 +772,7 @@ footer .nav-item {
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 825px) {
 	header, footer, .intro, .target, .manage, .other-feature, .question, .start-panchat{
 		padding-right: 64px;
 		padding-left: 64px;
