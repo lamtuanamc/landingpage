@@ -534,13 +534,18 @@ header {
 }
 
 .start-panchat {
-	padding: 116px;
+	padding: 116px 116px 0 116px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	max-width: 1440px;
 	margin: 0 auto;
+}
+
+.start-panchat img {
+	height: 600px;
+	max-height: 80vw;
 }
 
 .start-panchat .content-section {
@@ -689,6 +694,9 @@ footer .nav-item {
 		margin-right: 150px;
 	}
 
+	.start-panchat img {
+		height: 500px;
+	}
 }
 
 
@@ -722,9 +730,13 @@ footer .nav-item {
 		margin-left: 100px;
 		margin-right: 100px;
 	}
+
+	.start-panchat img {
+		height: 400px;
+	}
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1050px) {
 	body {
 		overflow-x: hidden !important;
 	}
@@ -732,6 +744,10 @@ footer .nav-item {
 	.container {
 		max-width: 100% !important;
 		overflow-x: hidden !important;
+	}
+
+	.right-side-intro img{
+		height: 420px;
 	}
 	
 	/* header, footer, .intro, .target, .manage, .other-feature, .question, .start-panchat{
@@ -816,7 +832,21 @@ footer .nav-item {
 	}
 }
 
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 950px) {
+	.right-side-intro img{
+		height: 350px;
+	}
+
+	.background-rotate {
+		width: 485px;
+		height: 485px;
+		border-radius: 60px;
+		right: -140px;
+		top: -110px;
+	}
+}
+
+@media screen and (max-width: 875px) {
 	body {
 		overflow-x: hidden !important;
 	}
@@ -1060,6 +1090,10 @@ footer .nav-item {
 		font-size: 14px;
 		color: #828282;
 	}
+
+	.start-panchat img {
+		height: 300px;
+	}
 }
 
 @media screen and (max-width: 575px) {
@@ -1153,14 +1187,22 @@ footer .nav-item {
 		height: 240px;
 	}
 
-	.target, .question, .start-panchat {
+	.target, .question {
 		padding-top: 64px;
 		padding-bottom: 64px;
+	}
+
+	.start-panchat {
+		padding-top: 64px;
 	}
 
 	.question-item {
 		margin-left: 16px;
 		margin-right: 16px;
+	}
+
+	.start-panchat img {
+		height: 220px;
 	}
 
 }
