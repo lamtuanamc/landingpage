@@ -23,10 +23,10 @@
 				</div>
 				<div>
 					<ul class="nav">
-						<li class="nav-item nav-item-active" onclick="scrollToId('intro')">Giới thiệu</li>
-						<li class="nav-item" onclick="scrollToId('feature')"> Tính năng</li>
-						<li class="nav-item" onclick="scrollToId('target')">Đối tượng</li>
-						<li class="nav-item" onclick="scrollToId('question')">Câu hỏi thường gặp</li>
+						<li class="nav-item" onclick="scrollToId('intro'), toggleMenuSm">Giới thiệu</li>
+						<li class="nav-item" onclick="scrollToId('feature'), toggleMenuSm()"> Tính năng</li>
+						<li class="nav-item" onclick="scrollToId('target'), toggleMenuSm()">Đối tượng</li>
+						<li class="nav-item" onclick="scrollToId('question'), toggleMenuSm()">Câu hỏi thường gặp</li>
 					</ul>
 				</div>
 			</div>
@@ -45,10 +45,24 @@
 					</a>
 				</div> -->
 			</div>
-			<div class="menu-sm">
-				<img src="./assets/menu-sm.svg" alt="">
+			<div class="menu-sm" onclick="toggleMenuSm();">
+				<img src="./assets/menu-sm.svg" alt="" id="icon-menu-sm">
 			</div>
 		</header>
+		<div class="nav-sm" id="nav-sm">
+			<ul>
+				<li class="nav-item nav-item-active" onclick="scrollToId('intro')">Giới thiệu</li>
+				<li class="nav-item" onclick="scrollToId('feature')"> Tính năng</li>
+				<li class="nav-item" onclick="scrollToId('target')">Đối tượng</li>
+				<li class="nav-item" onclick="scrollToId('question')">Câu hỏi thường gặp</li>
+			</ul>
+			<div class="btn-sm">
+				<a class="btn btn-download-sm btn-download" id="btn-download" href="#">
+					<p class="btn-text">Tải xuống</p>
+					<img src="./assets/download.svg" alt="">
+				</a>
+			</div>
+		</div>
 		<main>
 			<section class="rounded-intro" id="intro">
 				<div class="intro">
@@ -318,6 +332,8 @@
 
 		function scrollToId(id) {
 			document.getElementById(id).scrollIntoView({behavior: 'smooth'});
+			let menuSm = document.getElementById("nav-sm");
+			menuSm.classList.remove("toggle-nav-sm");
 		}
 
 		function getOS() {
@@ -341,6 +357,26 @@
 		}
 		
 		document.getElementById("btn-download").href = getOS();
+		document.getElementById("btn-download-sm").href = getOS();
+
+		function toggleMenuSm() {
+			let menuSm = document.getElementById("nav-sm");
+			menuSm.classList.toggle("toggle-nav-sm");
+
+			let icon = document.getElementById("icon-menu-sm");
+			console.log(icon.src);
+			if(icon.src.includes("/assets/menu-sm.svg")) {
+				icon.src = icon.src.replace("/assets/menu-sm.svg", "/assets/close.svg");
+				console.log(icon.src)
+			console.log("1");
+
+			} else if(icon.src.includes("/assets/close.svg")) {
+				icon.src = icon.src.replace("/assets/close.svg", "/assets/menu-sm.svg");
+			console.log("2");
+
+			}
+		}
+
 	</script>
 </body>
 </html>
