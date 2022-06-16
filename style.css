@@ -250,6 +250,14 @@ header {
 	margin-left: 24px;
 }
 
+.right-side-manage .before-title {
+	margin-left: 0;
+}
+
+.other-feature .before-title {
+	margin-left: 36px;
+}
+
 .feature-title p {
 	font-weight: 500;
 	font-size: 34px;
@@ -680,6 +688,11 @@ footer .nav-item {
 		font-size: 28px;
 	}
 
+	.right-side-other-feature {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 	.right-side-other-feature img {
 		height: 430px;
 	}
