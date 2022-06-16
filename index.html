@@ -338,6 +338,11 @@
 			document.getElementById(id).scrollIntoView({behavior: 'smooth'});
 			let menuSm = document.getElementById("nav-sm");
 			menuSm.classList.remove("toggle-nav-sm");
+
+			let icon = document.getElementById("icon-menu-sm");
+			if(icon.src.includes("/assets/close.svg")) {
+				icon.src = icon.src.replace("/assets/close.svg", "/assets/menu-sm.svg");
+			}
 		}
 
 		function getOS() {
