@@ -35,7 +35,7 @@
 			</div>
 			<div class="right-side-header">
 				<a href="https://pages.fm/" class="link-pancake">
-					<img src="/assets/logo-pancake.svg" alt="">
+					<img src="./assets/logo-pancake.svg" alt="">
 					<p>Tìm hiểu Pancake</p>
 				</a>
 				<!-- <a href="https://id.pancake.vn/signup" class="btn btn-register">
@@ -84,7 +84,7 @@
 						<div class="rouded-rotate-bg">
 							<div class="background-rotate"></div>
 						</div>
-						<img src="/assets/images/intro.png" alt="">
+						<img src="./assets/images/intro.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -266,7 +266,7 @@
 				<div class="start-panchat">
 					<p class="content-section">Bắt đầu với Pancake Chat</p>
 					<p class="quote-section">Dễ dàng quản lý, trao đổi công việc của bạn cùng với Pancake Chat ngay chỉ với thao tác đơn giản.</p>
-					<img src="/assets/images/isssue-detail.png" alt="">
+					<img src="./assets/images/isssue-detail.png" alt="">
 					<!-- <a href="https://id.pancake.vn/signup" class="btn">
 						<p class="btn-text">Đăng ký ngay</p>
 						<img src="./assets/swrapRight.svg" alt="">
@@ -340,8 +340,8 @@
 			menuSm.classList.remove("toggle-nav-sm");
 
 			let icon = document.getElementById("icon-menu-sm");
-			if(icon.src.includes("/assets/close.svg")) {
-				icon.src = icon.src.replace("/assets/close.svg", "/assets/menu-sm.svg");
+			if(icon.src.includes("./assets/close.svg")) {
+				icon.src = icon.src.replace("./assets/close.svg", "/assets/menu-sm.svg");
 			}
 		}
 
@@ -373,10 +373,10 @@
 			menuSm.classList.toggle("toggle-nav-sm");
 
 			let icon = document.getElementById("icon-menu-sm");
-			if(icon.src.includes("/assets/menu-sm.svg")) {
-				icon.src = icon.src.replace("/assets/menu-sm.svg", "/assets/close.svg");
-			} else if(icon.src.includes("/assets/close.svg")) {
-				icon.src = icon.src.replace("/assets/close.svg", "/assets/menu-sm.svg");
+			if(icon.src.includes("./assets/menu-sm.svg")) {
+				icon.src = icon.src.replace("./assets/menu-sm.svg", "./assets/close.svg");
+			} else if(icon.src.includes("./assets/close.svg")) {
+				icon.src = icon.src.replace("./assets/close.svg", "./assets/menu-sm.svg");
 			}
 		}
 
