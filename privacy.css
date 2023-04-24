@@ -12,16 +12,20 @@ color : #3D3D3D;
 h2, h3, h4 {
 	font-weight: 600;
 	color: #555555;
+	
 }
 h3, h4 {
 	font-size: 18px;
+	margin-bottom: 1rem;
+
 }
 h2 {
 	font-size: 22px;
+	margin-bottom: 1.5rem;
 }
 
 .privacy-policy p {
-	font-size: 15px;
+	font-size: 14.5px;
 	line-height: 1.5;
 	margin-bottom: 1rem;
 	color: rgba(0, 0, 0, 0.65);
