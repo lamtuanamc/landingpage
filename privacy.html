@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="user-scalable=no, width=device-width, initial-scale=1.0"
+		/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+		<meta
+			property="og:description"
+			content="Ứng dụng trao đổi thông tin nội bộ với các chế độ quản lý công việc, giúp các nhà quản lý có thể kiểm soát luồng công việc dễ dàng hiệu quả."
+		/>
+		<meta
+			property="og:image"
+			content="https://pancakework.vn/assets/images/preview.png"
+		/>
+		<meta property="og:url" content="https://pancakework.vn/" />
+		<title>Pancake chat</title>
+		<link rel="stylesheet" href="./reset.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="privacy.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<header id="header">
+				<div class="left-side-header">
+					<div class="logo">
+						<img src="./assets/logo.svg" alt="logo" />
+						<h1 class="logo-text">PancakeChat</h1>
+					</div>
+					<div>
+						<ul class="nav">
+							<li class="nav-item" onclick="scrollToId('intro'), toggleMenuSm">
+								Giới thiệu
+							</li>
+							<li
+								class="nav-item"
+								onclick="scrollToId('feature'), toggleMenuSm()"
+							>
+								Tính năng
+							</li>
+							<li
+								class="nav-item"
+								onclick="scrollToId('target'), toggleMenuSm()"
+							>
+								Đối tượng
+							</li>
+							<li
+								class="nav-item"
+								onclick="scrollToId('question'), toggleMenuSm()"
+							>
+								Câu hỏi thường gặp
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="right-side-header">
+					<a href="https://pages.fm/" class="link-pancake">
+						<img src="./assets/logo-pancake.svg" alt="" />
+						<p>Tìm hiểu Pancake</p>
+					</a>
+					<!-- <a href="https://id.pancake.vn/signup" class="btn btn-register">
+					<p class="btn-text register-text">Đăng ký</p>
+				</a> -->
+					<!-- <div class="btn-action">
+					<a class="btn btn-download" id="btn-download" href="#">
+						<p class="btn-text">Tải xuống</p>
+						<img src="./assets/download.svg" alt="">
+					</a>
+				</div> -->
+				</div>
+				<div class="menu-sm" onclick="toggleMenuSm();">
+					<img src="./assets/menu-sm.svg" alt="" id="icon-menu-sm" />
+				</div>
+			</header>
+			<div class="nav-sm" id="nav-sm">
+				<ul>
+					<li class="nav-item nav-item-active" onclick="scrollToId('intro')">
+						Giới thiệu
+					</li>
+					<li class="nav-item" onclick="scrollToId('feature')">Tính năng</li>
+					<li class="nav-item" onclick="scrollToId('target')">Đối tượng</li>
+					<li class="nav-item" onclick="scrollToId('question')">
+						Câu hỏi thường gặp
+					</li>
+				</ul>
+				<div class="btn-sm">
+					<a
+						class="btn btn-download-sm btn-download"
+						id="btn-download-sm"
+						href="#"
+					>
+						<p class="btn-text">Tải xuống</p>
+						<img src="./assets/download.svg" alt="" />
+					</a>
+				</div>
+			</div>
+			<main>
+				<div class="privacy-policy">
+					<h1>Privacy Policy</h1>
+					<br />
+					<p>
+						Cake Commerce ("Company") built the Botcake ("Product") app as a
+						Commercial app. This SERVICE is provided by Cake Commerce and is
+						intended for use as is.
+					</p>
+					<p>
+						This page is used to inform website visitors regarding our policies
+						with the collection, use, and disclosure of data if anyone decided
+						to use our Service.
+					</p>
+					<p>
+						If you choose to use our Service, then you agree to the collection
+						and use of information in relation to this policy. The data that we
+						collect is used for providing and improving the Service. We will not
+						use or share your data with anyone except as described in this
+						Privacy Policy.
+					</p>
+					<p>
+						The terms used in this Privacy Policy have the same meanings as in
+						our Terms and Conditions, which is accessible at Botcake unless
+						otherwise defined in this Privacy Policy.
+					</p>
+					<br />
+					<h3>Data Collection and Use</h3>
+					<br />
+					<p>
+						In order to function, the app will collect your name, email address,
+						your Facebook Page list and its data which include public data such
+						as comments, posts, and private messages. The information that we
+						request is will be retained by us and used as described in this
+						privacy policy.
+					</p>
+					<p>
+						Your data is stored on our server as long as your subscription is
+						active. When an active subscription is no longer available. We have
+						the right to remove your data automatically from our database after
+						60 days. In case you want to stop using our service and remove all
+						data completely, please let us know. We will fulfill your request
+						with 24 hours.
+					</p>
+
+					<p>
+						For a better experience and statistical, the app does use third
+						party services that may collect information used to identify you.
+						These third party services may collect information such as your
+						device Internet Protocol (“IP”) address, device name, operating
+						system version, the time and date of your use of our app, and other
+						statistics.
+					</p>
+					<p>
+						When you use our application, we may collect and use your location
+						information to provide location-based services. We will only collect
+						this information with your explicit consent, and you may revoke your
+						consent at any time. We will only use your location information to
+						provide location-based services within our application. We will not
+						share or sell your location information to any third party for
+						marketing or advertising purposes.
+					</p>
+					<p>
+						We will store your location information on our secure servers for as
+						long as necessary to provide you with the requested services. We
+						will take all reasonable measures to protect your information from
+						unauthorized access or disclosure. You may access, update, or delete
+						your location information by changing your settings within our
+						application. If you have any questions or concerns about the
+						collection, use, or storage of your location information, please
+						contact us using the information provided below.
+					</p>
+					<p>
+						Link to privacy policy of third party service providers used by the
+						app
+					</p>
+					<ul>
+						<li>
+							<p>
+								<a href="https://analytics.google.com" target="_blank"
+									>Google Analytics</a
+								><a href="https://policies.google.com/privacy" target="_blank"
+									>(Privacy)</a
+								>
+							</p>
+						</li>
+					</ul>
+					<br />
+					<h3>Cookies</h3>
+					<br />
+					<p>
+						Cookies are files with a small amount of data that are commonly used
+						as anonymous unique identifiers. These are sent to your browser from
+						the websites that you visit and are stored on your device's internal
+						memory.
+					</p>
+					<p>
+						The app uses cookies to validate your identity after you logged into
+						your account. Beside, the app may use third party code and libraries
+						that use “cookies” to collect information and improve their
+						services. You have the option to either accept or refuse these
+						cookies and know when a cookie is being sent to your device. If you
+						choose to refuse our cookies, you will not be able to login into
+						your account.
+					</p>
+					<br />
+					<h3>Security</h3>
+					<br />
+					<p>
+						We value your trust in providing us your data, thus we are striving
+						to use commercially acceptable means of protecting it. But remember
+						that no method of transmission over the internet, or method of
+						electronic storage is 100% secure and reliable, and we cannot
+						guarantee its absolute security.
+					</p>
+					<br />
+					<h3>Links to Other Sites</h3>
+					<br />
+					<p>
+						This Service may contain links to other sites. If you click on a
+						third-party link, you will be directed to that site. Note that these
+						external sites are not operated by us. Therefore, we strongly advise
+						you to review the Privacy Policy of these websites. We have no
+						control over and assume no responsibility for the content, privacy
+						policies, or practices of any third-party sites or services.
+					</p>
+					<br />
+					<h3>Children’s Privacy</h3>
+					<br />
+					<p>
+						These Services do not address anyone under the age of 13. We do not
+						knowingly collect personally identifiable information from children
+						under 13. In the case we discover that a child under 13 has provided
+						us with personal information, we immediately delete this from our
+						servers. If you are a parent or guardian and you are aware that your
+						child has provided us with personal information, please contact us
+						so that we will be able to do necessary actions.
+					</p>
+					<br />
+					<h3>Changes to This Privacy Policy</h3>
+					<br />
+					<p>
+						We may update our Privacy Policy from time to time. Thus, you are
+						advised to review this page periodically for any changes. We will
+						notify you of any changes by posting the new Privacy Policy on this
+						page. These changes are effective immediately after they are posted
+						on this page.
+					</p>
+					<br />
+					<h3>Contact Us</h3>
+					<br />
+					<p>
+						If you have any questions or suggestions about our Privacy Policy,
+						do not hesitate to contact us.
+					</p>
+				</div>
+			</main>
+			<footer>
+				<div class="left-side-footer">
+					<div class="logo">
+						<img src="./assets/logo.svg" alt="logo" />
+						<h1 class="logo-text">PancakeChat</h1>
+					</div>
+					<div class="quote-app">
+						Pancake Chat là phần mềm chat giúp trao đổi thông tin nội bộ một
+						cách dễ dàng.
+					</div>
+					<div class="quote-app">CTY: TNHH PANCAKE VIỆT NAM</div>
+					<div class="quote-app">MST: 0109039397</div>
+					<div class="quote-app">
+						Đ/C: Toà A3 Ecolife Capitol, 58 Tố Hữu, Trung Văn, Nam Từ Liêm, Hà
+						Nội, Việt Nam
+					</div>
+					<!-- <div class="quote-app">
+					<a href="https://apps.apple.com/mt/app/pancake-chat/id1527053006">
+						<img src="./assets/images/noti-bct.png" alt="" style="height: 50px;">
+					</a>
+				</div> -->
+				</div>
+				<div class="right-side-footer">
+					<div class="get-app">Về chúng tôi</div>
+					<ul class="rounded-get-app">
+						<li class="nav-item" onclick="scrollToId('intro')">Giới thiệu</li>
+						<li class="nav-item" onclick="scrollToId('feature')">Tính năng</li>
+						<li class="nav-item" onclick="scrollToId('target')">Đối tượng</li>
+						<li class="nav-item" onclick="scrollToId('question')">
+							Câu hỏi thường gặp
+						</li>
+					</ul>
+				</div>
+				<div class="right-side-footer">
+					<div class="get-app">Tham gia</div>
+					<ul class="rounded-get-app">
+						<li class="nav-item" onclick="scrollToId('intro')">Panchat</li>
+						<li class="nav-item" onclick="scrollToId('feature')">Instagram</li>
+						<li class="nav-item" onclick="scrollToId('target')">Facebook</li>
+					</ul>
+				</div>
+				<div class="right-side-footer">
+					<div class="get-app">Get the app</div>
+					<div class="rounded-get-app">
+						<div class="down-app app-store">
+							<a href="https://apps.apple.com/mt/app/pancake-chat/id1527053006">
+								<img src="./assets/images/app-store.png" alt="" />
+							</a>
+						</div>
+						<div class="down-app ch-play">
+							<a
+								href="https://play.google.com/store/apps/details?id=vn.pancake.chat&hl=vi&gl=US"
+							>
+								<img src="./assets/images/ch-play.png" alt="" />`
+							</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<div style="border: 1px solid #eae8e8; margin-top: 20px"></div>
+			<div class="last-footer">
+				<div>
+					<div class="copyright">© 2022 Pancake Chat</div>
+				</div>
+				<div>
+					<ul class="nav">
+						<li class="nav-item" onclick="scrollToId('intro')">Terms</li>
+						<li class="nav-item" onclick="scrollToId('feature')">Privacy</li>
+						<li class="nav-item" onclick="scrollToId('target')">Cookies</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script>
+			var acc = document.getElementsByClassName('accordion-question');
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener('click', function () {
+					this.classList.toggle('accordion-active');
+					var panel = this.nextElementSibling;
+					if (panel.style.maxHeight) {
+						panel.style.maxHeight = null;
+					} else {
+						panel.style.maxHeight = panel.scrollHeight + 'px';
+					}
+				});
+			}
+
+			function scrollToId(id) {
+				document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+				let menuSm = document.getElementById('nav-sm');
+				menuSm.classList.remove('toggle-nav-sm');
+
+				let icon = document.getElementById('icon-menu-sm');
+				if (icon.src.includes('./assets/close.svg')) {
+					icon.src = icon.src.replace(
+						'./assets/close.svg',
+						'./assets/menu-sm.svg'
+					);
+				}
+			}
+
+			function getOS() {
+				let userAgent = window.navigator.userAgent.toLowerCase(),
+					macosPlatforms = /(macintosh|macintel|macppc|mac68k|macos)/i,
+					windowsPlatforms = /(win32|win64|windows|wince)/i,
+					iosPlatforms = /(iphone|ipad|ipod)/i,
+					os = null;
+
+				if (macosPlatforms.test(userAgent)) {
+					return 'https://statics.pancake.vn/panchat-dev/PancakeChat.dmg';
+				} else if (iosPlatforms.test(userAgent)) {
+					return 'https://apps.apple.com/mt/app/pancake-chat/id1527053006';
+				} else if (windowsPlatforms.test(userAgent)) {
+					return 'https://statics.pancake.vn/panchat-dev/PancakeChat.exe';
+				} else if (/android/.test(userAgent)) {
+					return 'https://play.google.com/store/apps/details?id=vn.pancake.chat&hl=vi&gl=US';
+				} else if (!os && /linux/.test(userAgent)) {
+					return '#';
+				}
+			}
+
+			document.getElementById('btn-download').href = getOS();
+			document.getElementById('btn-download-sm').href = getOS();
+
+			function toggleMenuSm() {
+				let menuSm = document.getElementById('nav-sm');
+				menuSm.classList.toggle('toggle-nav-sm');
+
+				let icon = document.getElementById('icon-menu-sm');
+				if (icon.src.includes('./assets/menu-sm.svg')) {
+					icon.src = icon.src.replace(
+						'./assets/menu-sm.svg',
+						'./assets/close.svg'
+					);
+				} else if (icon.src.includes('./assets/close.svg')) {
+					icon.src = icon.src.replace(
+						'./assets/close.svg',
+						'./assets/menu-sm.svg'
+					);
+				}
+			}
+		</script>
+	</body>
+</html>

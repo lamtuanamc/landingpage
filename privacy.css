@@ -1,0 +1,42 @@
+.question, .privacy-policy {
+	padding: 116px;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+
+h1, h3 {
+	font-size: 20px;
+	font-weight: 600;
+	color: #555555;
+}
+
+.privacy-policy p {
+	font-size: 15px;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+	color: rgba(0, 0, 0, 0.65);
+	text-align: justify;
+  text-justify: inter-word;
+}
+
+@media screen and (max-width: 1250px) {
+	.privacy-policy {
+		padding-right: 86px;
+		padding-left: 86px;
+	}
+}
+
+@media screen and (max-width: 875px) {
+	.privacy-policy {
+		padding-right: 64px;
+		padding-left: 64px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.privacy-policy {
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+}
