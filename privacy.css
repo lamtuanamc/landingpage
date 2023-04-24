@@ -4,6 +4,10 @@
 	margin: 0 auto;
 }
 
+.logo h1 {
+color : #3D3D3D;
+}
+
 
 h2, h3, h4 {
 	font-weight: 600;
